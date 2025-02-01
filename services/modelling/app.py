@@ -14,8 +14,8 @@ app = FastAPI(title="Photovoltaic-panels Digital Twin APIs",
               version="0.0.1")
 
 # change model_name with name of model
-ML_MODEL = "models/<model_name>.onnx"
-MATH_MODEL = "models/<model_name>.fmu"
+ML_MODEL = "models/_pv_energy.onnx"
+MATH_MODEL = "models/fmu_ubuntu/SolarPowerSystems.CoreModels.PVModel.fmu"
 
 
 def get_math_model_values():
