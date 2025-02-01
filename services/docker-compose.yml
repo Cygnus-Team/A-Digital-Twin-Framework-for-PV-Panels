@@ -1,0 +1,19 @@
+version: "2.2"
+
+services:
+  fastapi:
+    container_name: pv-fastapi
+    image: pv-fastapi:0.0.1
+    build: ./modelling
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+
+  webgl:
+    container_name: unity-webgl-demo
+    image: unity-webgl-demo:latest
+    build: ./3dsimulation
+    restart: unless-stopped
+    ports:
+      - "8001:80"
+

@@ -1,0 +1,4 @@
+.idea
+services/modelling/models/*.onnx
+services/modelling/models/*.fmu
+data/*.csv
